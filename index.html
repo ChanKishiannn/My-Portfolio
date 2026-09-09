@@ -1,52 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Portfolio</title>
 </head>
+
 <body>
-    <!--Navigation Bar Code-->
+
+    <!-- =========================
+         Navigation Bar
+         ========================= -->
+
     <nav class="navbar">
+
         <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">My Portfolio</a>
-            
-            <button class="navbar-toggle">
+
+            <a href="index.html" class="navbar-logo">
+                My Portfolio
+            </a>
+
+            <button class="navbar-toggle" aria-label="Open navigation menu">
+
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
+
             </button>
+
             <ul class="navbar-menu">
-                <li><a href="#homepageID" class="active">Home</a></li>
-                <li><a href="#aboutMeID">About Me</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+
+                <li>
+                    <a href="#homepageID" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#aboutMeID">
+                        About Me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Tools
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+
             </ul>
+
         </div>
+
     </nav>
 
-    <!-- Home Page Code-->
-    <div class="homepage" id="homepageID">
-        <h1 class="homepage-header">Hi, I'm Christian Mebato Abuda</h1>
-        <p class="homepage-text">I build websites that are user‑friendly and interactive, driven by a passion for turning ideas into reality through design and development.</p>
-        <div class="profile-picture-background">
-            <img src="profilePicture.png" alt="Profile-Picture" class="profile-picture">
-        </div>
-    </div>
 
-    <!--About ME Section-->
-    <div class="aboutMe" id="aboutMeID">
-        <h1 class="aboutMe-Header">About Me</h1>
-        <p class="aboutMe-Intro">I'm an aspiring Software Engineer with a passion for building modern, user-friendly, and interactive websites.
-            I enjoy building and turning my ideas into working and functional projects while striving to learn, continue to grow, and improve my skills.
-        </p>
+    <!-- =========================
+         Home Page
+         ========================= -->
 
-        <img src="profilePicture.png" alt="Profile-Picture" class="aboutMe-Picture">
-    </div>
+    <main>
+
+        <section class="homepage" id="homepageID">
+
+            <div class="homepage-section1">
+
+                <h1 class="homepage-header">
+                    Hi, I'm Christian Mebato Abuda
+                </h1>
+
+                <p class="homepage-text">
+                    I build websites that are user-friendly and interactive,
+                    driven by a passion for turning ideas into reality through
+                    design and development.
+                </p>
+
+            </div>
+
+
+            <div class="homepage-section2">
+
+                <div class="profile-picture-background">
+
+                    <img
+                        src="profilePicture.png"
+                        alt="Profile Picture"
+                        class="profile-picture"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             About Me
+             ========================= -->
+
+        <section class="aboutMe" id="aboutMeID">
+
+            <h2 class="aboutMe-header">
+                About Me
+            </h2>
+
+            <p class="aboutMe-intro">
+                I'm an aspiring Software Engineer with a passion for building
+                modern, user-friendly, and interactive websites. I enjoy
+                building and turning my ideas into working and functional
+                projects while striving to learn, continue to grow, and
+                improve my skills.
+            </p>
+
+        </section>
+
+    </main>
+
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
