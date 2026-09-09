@@ -41,12 +41,13 @@ body {
     height: 80px;
 
     position: sticky;
-    
     top: 0;
 
     background: white;
 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(10px);
 
     z-index: 999;
 }
@@ -145,6 +146,7 @@ body {
 
     cursor: pointer;
 
+    z-index: 1001;
 }
 
 
@@ -374,7 +376,7 @@ body {
 
     .homepage {
         flex-direction: column;
-        flex-direction: column-reverse;
+
         justify-content: center;
         align-items: center;
 
