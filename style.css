@@ -491,3 +491,207 @@ body {
         font-size: 16px;
     }
 }
+
+/* =============================
+   Tools Sections
+   ============================= */
+
+.toolsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: var(--secondary-font-size);
+}
+
+
+.toolsGrid {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 450px);
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+/* =============================
+   Tool Card
+   ============================= */
+.toolCategoryCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    border-radius: 50px;
+    width: 450px;
+    height: 650px;
+    color: white;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.toolCategoryCard:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+    transform: scale(1.03);
+}
+
+
+/* =============================
+   Small Tools Grid
+   ============================= */
+.toolsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    width: 90%;
+    justify-items: center;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Individual Tool */
+.toolItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Tool Logo */
+.toolLogo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* Tool Name */
+.toolName {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+
+/* =============================
+   Hover Picture
+   ============================ */
+.categoryPreview {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Big Picture */
+.categoryImage {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+
+/* Big Picture Title */
+.categoryTitle {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.categoryText{
+    width: 400px;
+    text-align: center;
+}
+
+
+/* =============================
+   Hover Effect
+   ============================= */
+
+/* Hide the small tools */
+.toolCategoryCard:hover .toolsList {
+    opacity: 0;
+}
+
+
+/* Show the big picture */
+.toolCategoryCard:hover .categoryPreview {
+    opacity: 1;
+}
+
+@media (max-width: 1200px){
+    .toolsGrid {
+        grid-template-columns: repeat(2, 450px);
+    }
+}
+
+/* =============================
+   Tools Small Tablet Responsive
+   ============================= */
+
+@media (max-width: 950px) {
+
+    .toolsGrid {
+        grid-template-columns: 450px;
+    }
+
+}
+
+/* =============================
+   Tools Phone Responsive
+   ============================= */
+
+@media (max-width: 600px) {
+
+    .toolsGrid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .toolCategoryCard {
+        width: 100%;
+        max-width: 450px;
+        height: 600px;
+    }
+
+    .toolsList {
+        gap: 30px 10px;
+    }
+
+    .toolLogo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .toolName {
+        font-size: 14px;
+    }
+
+    .categoryImage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .categoryText {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .categoryTitle {
+        font-size: 25px;
+    }
+}
