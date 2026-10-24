@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-
     <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
@@ -18,57 +19,43 @@
          ========================= -->
 
     <nav class="navbar">
-
         <div class="navbar-container">
 
-            <a href="index.html" class="navbar-logo">
-                My Portfolio
+            <a href="#homepageID" class="navbar-logo">
+                <span class="navbar-logo-icon">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+                <span>Christian<span class="navbar-logo-dot">.</span></span>
             </a>
 
-            <button class="navbar-toggle" aria-label="Open navigation menu">
-
+            <button
+                class="navbar-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navbar-menu"
+                type="button"
+            >
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-
             </button>
 
-            <ul class="navbar-menu">
-
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#homepageID" class="active">Home</a></li>
+                <li><a href="#aboutMeID">About Me</a></li>
+                <li><a href="#servicesID">Services</a></li>
+                <li><a href="#toolsID">Tools</a></li>
+                <li><a href="#projectsID">Projects</a></li>
+                <li><a href="#experienceID">Experience</a></li>
                 <li>
-                    <a href="#homepageID" class="active">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#aboutMeID">
-                        About Me
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#toolsID">
-                        Tools
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
+                    <a href="#contactID" class="navbar-contact">
                         Contact
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </li>
-
             </ul>
 
         </div>
-
     </nav>
 
 
@@ -76,261 +63,1010 @@
          Home Page
          ========================= -->
 
-        <section class="homepage" id="homepageID">
+    <section class="homepage" id="homepageID">
 
-            <div class="homepage-section1">
+        <div class="homepage-section1">
 
-                <h1 class="homepage-header">
-                    Hi, I'm Christian Mebato Abuda
-                </h1>
+            <span class="homepage-label">
+                ASPIRING SOFTWARE ENGINEER & VIRTUAL ASSISTANT
+            </span>
 
-                <p class="homepage-text">
-                    I build websites that are user-friendly and interactive,
-                    driven by a passion for turning ideas into reality through
-                    design and development.
+            <h1 class="homepage-header">
+                <span>Hi, I'm</span> Christian
+                <br>Mebato Abuda.
+            </h1>
+
+            <p class="homepage-text">
+                I combine technical skills, creativity, and professional
+                experience to build user-friendly websites and provide
+                reliable support that helps businesses grow.
+            </p>
+
+            <div class="homepage-buttons">
+                <a href="#projectsID" class="homepage-btn homepage-btn-primary">
+                    View My Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#aboutMeID" class="homepage-btn homepage-btn-secondary">
+                    About Me
+                </a>
+            </div>
+
+            <div class="homepage-note">
+                <span class="homepage-status"></span>
+                Always learning. Always improving.
+            </div>
+
+        </div>
+
+        <div class="homepage-section2">
+            <div class="profile-picture-background">
+
+                <div class="profile-picture-decoration"></div>
+
+                <img
+                    src="profilePicture.png"
+                    alt="Portrait of Christian Mebato Abuda"
+                    class="profile-picture"
+                >
+
+                <div class="profile-picture-tag">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div>
+                        <strong>Building & Growing</strong>
+                        <span>One project at a time</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         About Me
+         ========================= -->
+
+    <section class="aboutMe" id="aboutMeID">
+
+        <div class="aboutMe-container">
+
+            <div class="aboutMe-left">
+
+                <span class="aboutMe-label">GET TO KNOW ME</span>
+
+                <h2 class="aboutMe-header">
+                    About <span>Me.</span>
+                </h2>
+
+                <div class="aboutMe-line"></div>
+
+                <p class="aboutMe-intro">
+                    I'm an aspiring Software Engineer who enjoys turning ideas
+                    into functional applications and user-friendly websites.
+                    I love building personal projects, exploring new
+                    technologies, and continuously improving my programming skills.
+                </p>
+
+                <p class="aboutMe-intro">
+                    Aside from programming, I have one year of experience in
+                    seller chat support, one year of experience as a
+                    Person-in-Charge in a BPO company, and six months of
+                    bookkeeping experience. As a Person-in-Charge, I assisted
+                    the Team Lead with team management, performance monitoring,
+                    and report creation based on team data. These experiences
+                    have helped me develop my communication, organization,
+                    attention to detail, and problem-solving skills.
+                </p>
+
+                <p class="aboutMe-intro">
+                    My goal is to combine my professional experience and
+                    technical knowledge to develop practical solutions, create
+                    meaningful digital experiences, and help businesses improve
+                    their operations through reliable and efficient support.
                 </p>
 
             </div>
 
+            <div class="aboutMe-right">
 
-            <div class="homepage-section2">
+                <div class="aboutMe-card">
+                    <div class="aboutMe-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>
+                        Building personal projects, developing applications,
+                        and creating user-friendly websites.
+                    </p>
+                </div>
 
-                <div class="profile-picture-background">
+                <div class="aboutMe-card">
+                    <div class="aboutMe-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>
+                        Providing helpful and empathetic customer service,
+                        answering inquiries, and handling customer concerns
+                        professionally.
+                    </p>
+                </div>
 
+                <div class="aboutMe-card">
+                    <div class="aboutMe-icon">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <h3>Administrative Support</h3>
+                    <p>
+                        Assisting with reports, organizing information,
+                        monitoring team performance, and supporting daily
+                        business operations.
+                    </p>
+                </div>
+
+                <div class="aboutMe-card">
+                    <div class="aboutMe-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Continuous Improvement</h3>
+                    <p>
+                        Learning new tools, improving my technical and
+                        professional skills, and finding practical ways
+                        to work efficiently.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Services Section
+         ========================= -->
+
+    <section class="services" id="servicesID">
+
+        <div class="services-container">
+
+            <div class="services-heading">
+                <span class="services-label">WHAT I CAN DO</span>
+                <h2 class="services-title">My Services</h2>
+
+                <p class="services-description">
+                    Providing technical and administrative support to help
+                    businesses work smarter and more efficiently.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Website Development -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="WebDev.png" alt="Website Development">
+                    </div>
+
+                    <div class="service-content">
+                        <h3>Website Development</h3>
+                        <p>
+                            Creating responsive, user-friendly websites
+                            using HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="CustomerSupport.png" alt="Customer Support">
+                    </div>
+
+                    <div class="service-content">
+                        <h3>Chat Support</h3>
+                        <p>
+                            Responding to customer inquiries and handling
+                            concerns with patience and professionalism.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Data Entry -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="DataEntry.png" alt="Data Entry and Reporting">
+                    </div>
+
+                    <div class="service-content">
+                        <h3>Data Entry & Reporting</h3>
+                        <p>
+                            Organizing information, updating records,
+                            and preparing clear and accurate reports.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bookkeeping -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/bookkeeping.png" alt="Bookkeeping Assistance">
+                    </div>
+
+                    <div class="service-content">
+                        <h3>Bookkeeping Assistance</h3>
+                        <p>
+                            Helping organize financial records and
+                            maintain bookkeeping documentation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technical Assistance -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/technical-support.png" alt="Technical Assistance">
+                    </div>
+
+                    <div class="service-content">
+                        <h3>Technical Assistance</h3>
+                        <p>
+                            Assisting with digital tools, software,
+                            and everyday technical tasks.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         My Tools & Technologies
+         ========================= -->
+
+    <section class="toolsSection" id="toolsID">
+
+        <h2 class="toolsTitle">My Tools & Technologies</h2>
+
+        <p class="toolsDescription">
+            Technologies and tools I use to develop projects
+            and improve my technical skills.
+        </p>
+
+        <div class="toolsGrid">
+
+            <!-- Web Development -->
+            <div class="toolCategory">
+                <h3 class="toolCategoryTitle">Web Development</h3>
+
+                <div class="toolItems">
+                    <div class="toolItem">
+                        <img src="HTMLLogo.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="CSSLogo.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="JavaScriptLogo.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="WordPressLogo.png" alt="WordPress">
+                        <p>WordPress</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming -->
+            <div class="toolCategory">
+                <h3 class="toolCategoryTitle">Programming</h3>
+
+                <div class="toolItems">
+                    <div class="toolItem">
+                        <img src="PythonLogo.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="JavaLogo.png" alt="Java">
+                        <p>Java</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Analytics -->
+            <div class="toolCategory">
+                <h3 class="toolCategoryTitle">Data Analytics</h3>
+
+                <div class="toolItems">
+                    <div class="toolItem">
+                        <img src="Google_Sheets_Logo.png" alt="Google Sheets">
+                        <p>Google Sheets</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="mySQLpicture.jpg" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="PythonLogo.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Tools -->
+            <div class="toolCategory">
+                <h3 class="toolCategoryTitle">Design Tools</h3>
+
+                <div class="toolItems">
+                    <div class="toolItem">
+                        <img src="CanvaLogo.png" alt="Canva">
+                        <p>Canva</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="FigmaLogo.png" alt="Figma">
+                        <p>Figma</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productivity Tools -->
+            <div class="toolCategory">
+                <h3 class="toolCategoryTitle">Productivity Tools</h3>
+
+                <div class="toolItems">
+                    <div class="toolItem">
+                        <img src="NotionLogo.png" alt="Notion">
+                        <p>Notion</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="Google_Docs_Logo.png" alt="Google Docs">
+                        <p>Google Docs</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="Google_Sheets_Logo.png" alt="Google Sheets">
+                        <p>Google Sheets</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Tools -->
+            <div class="toolCategory">
+                <h3 class="toolCategoryTitle">Development Tools</h3>
+
+                <div class="toolItems">
+                    <div class="toolItem">
+                        <img src="VSCodeLogo.png" alt="Visual Studio Code">
+                        <p>VS Code</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="GitLogo.png" alt="Git">
+                        <p>Git</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="GitHubLogo.png" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="NetBeansLogo.png" alt="NetBeans">
+                        <p>NetBeans</p>
+                    </div>
+
+                    <div class="toolItem">
+                        <img src="JupiterNotebookLogo.png" alt="Jupyter Notebook">
+                        <p>Jupyter Notebook</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         My Projects
+         ========================= -->
+
+    <section class="projectsSection" id="projectsID">
+
+        <h2 class="projectsSectionTitle">My Projects<span>.</span></h2>
+
+        <p class="projectsSectionDescription">
+            Explore the projects I've created to practice my skills,
+            solve problems, and turn ideas into working applications.
+        </p>
+
+        <div class="projectsGrid">
+
+            <!-- Project 01 -->
+            <article class="projectCard">
+
+                <div class="projectCardTop">
                     <img
-                        src="profilePicture.png"
-                        alt="Profile Picture"
-                        class="profile-picture"
+                        src="CarGameIMG.png"
+                        alt="Car Rush game preview"
+                        class="projectPreview"
                     >
+
+                    <video class="projectPreviewVideo" muted playsinline preload="metadata">
+                        <source src="CarGameVid.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="projectContent">
+                    <span class="projectCategory">Game Development</span>
+                    <h3 class="projectTitle">Car Rush</h3>
+
+                    <p class="projectDescription">
+                        A small project where I recreated a car game I used
+                        to play as a child on my uncle’s keypad phone.
+                        This project brings back childhood memories while
+                        allowing me to practice and improve my programming skills.
+                    </p>
+
+                    <div class="projectTags">
+                        <span>Java</span>
+                        <span>NetBeans</span>
+                    </div>
+                </div>
+
+                <div class="projectCardBottom">
+                    <span class="projectType">Small Personal Project</span>
+
+                    <a
+                        href="https://github.com/ChanKishiannn/JavaCarGame"
+                        class="projectLink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project <span>↗</span>
+                    </a>
+                </div>
+
+            </article>
+
+            <!-- Project 02 -->
+            <article class="projectCard">
+
+                <div class="projectCardTop">
+                    <img
+                        src="FlyingChickIMG.png"
+                        alt="Flying Chick game preview"
+                        class="projectPreview"
+                    >
+
+                    <video class="projectPreviewVideo" muted playsinline preload="metadata">
+                        <source src="FyingChickVid.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="projectContent">
+                    <span class="projectCategory">Game Development</span>
+                    <h3 class="projectTitle">Flying Chick</h3>
+
+                    <p class="projectDescription">
+                        A small project where I recreated a flying bird game
+                        inspired by the classic game Flappy Bird. This project
+                        allows me to practice and improve my programming skills
+                        while learning more about game development.
+                    </p>
+
+                    <div class="projectTags">
+                        <span>Java</span>
+                        <span>NetBeans</span>
+                    </div>
+                </div>
+
+                <div class="projectCardBottom">
+                    <span class="projectType">Small Personal Project</span>
+
+                    <a
+                        href="https://github.com/ChanKishiannn/FloppyBirdCopy-JAVA-Code"
+                        class="projectLink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project <span>↗</span>
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Experience Section
+         ========================= -->
+
+    <section class="experience" id="experienceID">
+
+        <div class="experience-container">
+
+            <div class="experience-heading">
+                <span class="experience-label">MY PROFESSIONAL JOURNEY</span>
+                <h2 class="experience-title">Work Experience</h2>
+
+                <p class="experience-description">
+                    My professional journey across web development, data entry,
+                    customer support, team coordination, and creative design.
+                </p>
+            </div>
+
+            <div class="experience-timeline">
+
+                <!-- 1. Junior WordPress Developer -->
+                <div class="experience-item">
+
+                    <div class="experience-marker">
+                        <i class="fa-brands fa-wordpress"></i>
+                    </div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+                            <div>
+                                <h3>Junior WordPress Developer</h3>
+                                <h4>Freelance / Project-Based</h4>
+                            </div>
+                            <span class="experience-date">6 Months</span>
+                        </div>
+
+                        <p class="experience-type">Web Development</p>
+
+                        <ul>
+                            <li>Developed an e-commerce website for a car dealership based in the United Kingdom using WordPress and Elementor.</li>
+                            <li>Worked on website structure, page layouts, and user-friendly design.</li>
+                            <li>Gained practical experience in website development, page building, and e-commerce website design.</li>
+                        </ul>
+
+                        <p class="experience-note">
+                            The project was not released due to unforeseen circumstances,
+                            but it provided valuable hands-on development experience.
+                        </p>
+
+                        <div class="experience-skills">
+                            <span>WordPress</span>
+                            <span>Elementor</span>
+                            <span>Web Design</span>
+                            <span>E-commerce</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 2. Data Encoder -->
+                <div class="experience-item">
+
+                    <div class="experience-marker">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+                            <div>
+                                <h3>Data Encoder</h3>
+                                <h4>Part-Time</h4>
+                            </div>
+                            <span class="experience-date">8 Months</span>
+                        </div>
+
+                        <p class="experience-type">Data Entry / Administrative Support</p>
+
+                        <ul>
+                            <li>Transferred information from physical documents into digital spreadsheets.</li>
+                            <li>Entered and organized data carefully to maintain accurate digital records.</li>
+                            <li>Helped keep information structured and accessible for future reference.</li>
+                        </ul>
+
+                        <div class="experience-skills">
+                            <span>Data Entry</span>
+                            <span>Spreadsheets</span>
+                            <span>Accuracy</span>
+                            <span>Organization</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 3. Office Assistant OJT -->
+                <div class="experience-item">
+
+                    <div class="experience-marker">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+                            <div>
+                                <h3>Office Assistant (OJT)</h3>
+                                <h4>Pryce Tower / Pryce Gas, Inc.</h4>
+                            </div>
+                            <span class="experience-date">Office OJT</span>
+                        </div>
+
+                        <p class="experience-type">Office Administration</p>
+
+                        <ul>
+                            <li>Gathered information from physical documents and entered data into digital records.</li>
+                            <li>Contacted company branches by phone to follow up on permits and related requirements.</li>
+                            <li>Organized, sorted, and maintained physical paperwork and documentation.</li>
+                            <li>Assisted with general office tasks and document management.</li>
+                        </ul>
+
+                        <div class="experience-skills">
+                            <span>Data Encoding</span>
+                            <span>Documentation</span>
+                            <span>Phone Communication</span>
+                            <span>Office Administration</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 4. Seller Chat Support Agent -->
+                <div class="experience-item">
+
+                    <div class="experience-marker">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+                            <div>
+                                <h3>Seller Chat Support Agent</h3>
+                                <h4>Six Eleven Global Services and Solutions</h4>
+                            </div>
+                            <span class="experience-date">1 Year+</span>
+                        </div>
+
+                        <p class="experience-type">
+                            Shopee International Platform Malaysia
+                        </p>
+
+                        <ul>
+                            <li>Assisted Malaysian buyers with product inquiries, product features, and purchasing concerns through chat.</li>
+                            <li>Provided information about orders, shipping, delivery, returns, and refunds.</li>
+                            <li>Encouraged purchasing decisions by explaining relevant product features and benefits.</li>
+                            <li>Handled customer concerns with patience, empathy, and professionalism.</li>
+                        </ul>
+
+                        <div class="experience-skills">
+                            <span>Customer Support</span>
+                            <span>E-commerce</span>
+                            <span>Communication</span>
+                            <span>Problem-Solving</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 5. Person-in-Charge -->
+                <div class="experience-item">
+
+                    <div class="experience-marker">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+                            <div>
+                                <h3>Person-in-Charge (PIC)</h3>
+                                <h4>Six Eleven Global Services and Solutions</h4>
+                            </div>
+                            <span class="experience-date">1 Year</span>
+                        </div>
+
+                        <p class="experience-type">
+                            Shopee International Platform Malaysia · Team Operations
+                        </p>
+
+                        <ul>
+                            <li>Assisted the Team Lead with team coordination and daily operational concerns.</li>
+                            <li>Gathered and organized team data to support performance monitoring.</li>
+                            <li>Prepared reports based on team data and submitted them to the Team Lead.</li>
+                            <li>Helped communicate and address team issues, concerns, and operational updates.</li>
+                        </ul>
+
+                        <div class="experience-skills">
+                            <span>Team Coordination</span>
+                            <span>Reporting</span>
+                            <span>Data Monitoring</span>
+                            <span>Leadership Support</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 6. Graphic Designer -->
+                <div class="experience-item">
+
+                    <div class="experience-marker">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+                            <div>
+                                <h3>Graphic Designer</h3>
+                                <h4>College Club / Student Organization</h4>
+                            </div>
+                            <span class="experience-date">College Days</span>
+                        </div>
+
+                        <p class="experience-type">Graphic Design / Creative Work</p>
+
+                        <ul>
+                            <li>Created graphic designs as part of a college club.</li>
+                            <li>Developed creative and visual design skills through club activities and practical experience.</li>
+                            <li>Collaborated with fellow members while learning new design techniques.</li>
+                        </ul>
+
+                        <div class="experience-skills">
+                            <span>Graphic Design</span>
+                            <span>Creativity</span>
+                            <span>Visual Communication</span>
+                            <span>Teamwork</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Contact Section
+         ========================= -->
+
+    <section class="contact" id="contactID">
+
+        <div class="contact-container">
+
+            <div class="contact-heading">
+                <span class="contact-label">GET IN TOUCH</span>
+                <h2 class="contact-title">Let's Connect</h2>
+
+                <p class="contact-description">
+                    Have a project in mind or looking for someone to join your team?
+                    Feel free to reach out. I'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="contact-content">
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+
+                    <h3>Let's work together</h3>
+
+                    <p class="contact-info-description">
+                        I'm open to opportunities in web development, virtual assistance,
+                        customer support, and administrative support.
+                    </p>
+
+                    <!-- Email -->
+                    <a href="mailto:chankishiannn@gmail.com" class="contact-info-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-info-text">
+                            <span>Email Me</span>
+                            <p>chankishiannn@gmail.com</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+
+                    </a>
+
+                    <!-- Location -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="contact-info-text">
+                            <span>Location</span>
+                            <p>Davao City, Philippines</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <div class="contact-info-text">
+                            <span>Opportunities</span>
+                            <p>Remote / Freelance / Full-Time</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="contact-socials">
+
+                        <span class="contact-socials-title">Connect with me</span>
+
+                        <div class="contact-social-links">
+
+                            <a
+                                href="https://github.com/ChanKishiannn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                            >
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/christian-abuda-06170733b/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a
+                                href="https://www.facebook.com/Kishiannn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+
+                    <h3>Send me a message</h3>
+
+                    <p class="contact-form-description">
+                        Fill out the form below and I'll get back to you.
+                    </p>
+
+                    <form class="contact-form" id="contactForm">
+
+                        <div class="contact-form-row">
+
+                            <div class="contact-form-group">
+                                <label for="contactName">Your Name</label>
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="contact-form-group">
+                                <label for="contactEmail">Your Email</label>
+                                <input
+                                    type="email"
+                                    id="contactEmail"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                name="subject"
+                                placeholder="What is this about?"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contactMessage">Your Message</label>
+                            <textarea
+                                id="contactMessage"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="contact-submit">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <p
+                            class="contact-form-status"
+                            id="contactFormStatus"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
 
                 </div>
 
             </div>
 
-        </section>
+
+            <!-- Footer -->
+            <div class="contact-footer">
+
+                <a href="#homepageID" class="contact-footer-logo">
+                    Christian Mebato Abuda<span>.</span>
+                </a>
+
+                <p>Designed and built by Christian Mebato Abuda.</p>
+
+                <a href="#homepageID" class="contact-back-top">
+                    Back to top
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-        <!-- =========================
-             About Me
-             ========================= -->
-
-        <section class="aboutMe" id="aboutMeID">
-
-            <h2 class="aboutMe-header">
-                About Me
-            </h2>
-
-            <p class="aboutMe-intro">
-                I'm an aspiring Software Engineer with a passion for building
-                modern, user-friendly, and interactive websites. I enjoy
-                building and turning my ideas into working and functional
-                projects while striving to learn, continue to grow, and
-                improve my skills.
-            </p>
-            
-        </section>
-
-        <!-- =========================
-            My Tools
-            ========================= -->
-
-
-        <section class="toolsSection" id="toolsID">
-            <h1 class="toolsSectionTitle">My Tools</h1>
-                <div class="toolsGrid">
-                    <!-- =========================
-                        Data Analytics Card
-                        ========================= -->
-                    <div class="toolCategoryCard">
-                        <!-- Small Tools Grid -->
-                        <div class="toolsList">
-                            <div class="toolItem">
-                                <img 
-                                    src="Google_Sheets_Logo.png" 
-                                    alt="Google Sheets Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Google Sheets</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="mySQLpicture.jpg" 
-                                    alt="MySQL Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">MySQL</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="JupiterNotebookLogo.png" 
-                                    alt="Jupiter Notebook Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Jupiter Notebook</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="PythonLogo.png" 
-                                    alt="PythonLogo Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Python</h3>
-                            </div>
-                        </div>
-
-                        <!-- Hover Picture -->
-                        <div class="categoryPreview">
-
-                            <img 
-                                src="Data Analyst.png" 
-                                alt="Data Analyst"
-                                class="categoryImage"
-                            >
-
-                            <h3 class="categoryTitle">
-                                Data Analytics
-                            </h3>
-
-                            <p class="categoryText">
-                                These are the tools I use for data analytics.
-                                I have mastered Google Sheets to collect, organize, and arrange data,
-                                as well as design it in a clear and presentable format so that anyone
-                                can easily understand and interpret the information.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Other Cards -->
-                    <div class="toolCategoryCard">
-                        <!-- Small Tools Grid -->
-                        <div class="toolsList">
-                            <div class="toolItem">
-                                <img 
-                                    src="Google_Sheets_Logo.png" 
-                                    alt="Google Sheets Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Google Sheets</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="mySQLpicture.jpg" 
-                                    alt="MySQL Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">MySQL</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="JupiterNotebookLogo.png" 
-                                    alt="Jupiter Notebook Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Jupiter Notebook</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="PythonLogo.png" 
-                                    alt="PythonLogo Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Python</h3>
-                            </div>
-                        </div>
-
-                        <!-- Hover Picture -->
-                        <div class="categoryPreview">
-
-                            <img 
-                                src="Data Analyst.png" 
-                                alt="Data Analyst"
-                                class="categoryImage"
-                            >
-
-                            <h3 class="categoryTitle">
-                                Data Analytics
-                            </h3>
-
-                            <p class="categoryText">
-                                These are the tools I use for data analytics.
-                                I have mastered Google Sheets to collect, organize, and arrange data,
-                                as well as design it in a clear and presentable format so that anyone
-                                can easily understand and interpret the information.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="toolCategoryCard">
-                        <!-- Small Tools Grid -->
-                        <div class="toolsList">
-                            <div class="toolItem">
-                                <img 
-                                    src="Google_Sheets_Logo.png" 
-                                    alt="Google Sheets Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Google Sheets</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="mySQLpicture.jpg" 
-                                    alt="MySQL Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">MySQL</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="JupiterNotebookLogo.png" 
-                                    alt="Jupiter Notebook Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Jupiter Notebook</h3>
-                            </div>
-
-                            <div class="toolItem">
-                                <img 
-                                    src="PythonLogo.png" 
-                                    alt="PythonLogo Logo" 
-                                    class="toolLogo"
-                                >
-                                <h3 class="toolName">Python</h3>
-                            </div>
-                        </div>
-
-                        <!-- Hover Picture -->
-                        <div class="categoryPreview">
-
-                            <img 
-                                src="Data Analyst.png" 
-                                alt="Data Analyst"
-                                class="categoryImage"
-                            >
-
-                            <h3 class="categoryTitle">
-                                Data Analytics
-                            </h3>
-
-                            <p class="categoryText">
-                                These are the tools I use for data analytics.
-                                I have mastered Google Sheets to collect, organize, and arrange data,
-                                as well as design it in a clear and presentable format so that anyone
-                                can easily understand and interpret the information.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-        </section>
+    <!-- =========================
+         JavaScript
+         ========================= -->
 
     <script src="script.js"></script>
 
-</body> 
+</body>
 
 </html>
