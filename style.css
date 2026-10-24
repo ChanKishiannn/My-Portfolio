@@ -1024,6 +1024,9 @@
 /* =========================
    Services Section
    ========================= */
+/* =========================
+   Services Section
+   ========================= */
 
 .services {
     width: 100%;
@@ -1070,7 +1073,7 @@
     line-height: 1.9;
 }
 
-/* Grid */
+/* Services Grid */
 
 .services-grid {
     display: grid;
@@ -1083,9 +1086,10 @@
 .service-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 
     min-width: 0;
+    height: auto;
     padding: 24px;
 
     background: #ffffff;
@@ -1106,23 +1110,31 @@
     box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
 }
 
-/* Image Box */
+/* Service Image */
 
-/* Service Images */
 .service-image {
+    position: relative;
+    display: block;
+
+    flex: 0 0 auto;
     width: 100%;
     height: 220px;
+
+    margin: 0;
     overflow: hidden;
     border-radius: 10px;
 }
 
 .service-image img {
     display: block;
+
     width: 100%;
     height: 100%;
+    max-width: 100%;
+
     object-fit: cover;
     object-position: center;
-    border-radius: inherit;
+
     transition: transform 0.35s ease;
 }
 
@@ -1130,12 +1142,18 @@
     transform: scale(1.03);
 }
 
-
-/* Text Below Image */
+/* Service Text */
 
 .service-content {
-    margin-top: 30px;
+    position: relative;
+    display: block;
+
+    flex: 0 0 auto;
     width: 100%;
+    min-width: 0;
+
+    margin-top: 24px;
+    padding: 0;
 }
 
 .service-content h3 {
@@ -1145,6 +1163,8 @@
     font-size: 19px;
     font-weight: 700;
     line-height: 1.4;
+
+    overflow-wrap: break-word;
 }
 
 .service-content p {
@@ -1153,11 +1173,12 @@
     color: #6b7280;
     font-size: 14px;
     line-height: 1.8;
+
+    overflow-wrap: break-word;
 }
 
 /* Tablet */
 
-/* Tablet */
 @media (max-width: 950px) {
     .services {
         padding: 70px 25px;
@@ -1178,6 +1199,7 @@
 }
 
 /* Mobile */
+
 @media (max-width: 600px) {
     .services {
         padding: 55px 18px;
@@ -1189,41 +1211,76 @@
 
     .services-title {
         font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
     }
 
     .services-description {
         font-size: 14px;
+        line-height: 1.8;
     }
 
     .services-grid {
         grid-template-columns: minmax(0, 1fr);
         gap: 20px;
+        align-items: start;
     }
 
     .service-card {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        height: auto;
+        min-height: 0;
         padding: 16px;
+
+        overflow: hidden;
     }
 
     .service-image {
+        position: relative;
+
+        flex: 0 0 200px;
         width: 100%;
         height: 200px;
+        min-height: 200px;
+
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .service-image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .service-content {
-        margin-top: 50px;
+        position: relative;
+
+        flex: 0 0 auto;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+
+        margin-top: 20px;
+        padding: 0;
     }
 
     .service-content h3 {
+        margin: 0 0 10px;
         font-size: 18px;
+        line-height: 1.4;
     }
 
     .service-content p {
+        margin: 0;
         font-size: 14px;
+        line-height: 1.8;
     }
 }
-
-
     /* =============================
     Tools Section
     ============================= */
