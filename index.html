@@ -972,15 +972,17 @@
                         Fill out the form below and I'll get back to you.
                     </p>
 
-                    <form class="contact-form" id="contactForm">
-
+                    <form
+                        id="contactForm"
+                        action="https://formspree.io/f/mrppbnpk"
+                        method="POST"
+                    >
                         <div class="contact-form-row">
-
                             <div class="contact-form-group">
-                                <label for="contactName">Your Name</label>
+                                <label for="name">Your Name</label>
                                 <input
                                     type="text"
-                                    id="contactName"
+                                    id="name"
                                     name="name"
                                     placeholder="Enter your name"
                                     required
@@ -988,23 +990,22 @@
                             </div>
 
                             <div class="contact-form-group">
-                                <label for="contactEmail">Your Email</label>
+                                <label for="email">Your Email</label>
                                 <input
                                     type="email"
-                                    id="contactEmail"
+                                    id="email"
                                     name="email"
                                     placeholder="Enter your email"
                                     required
                                 >
                             </div>
-
                         </div>
 
                         <div class="contact-form-group">
-                            <label for="contactSubject">Subject</label>
+                            <label for="subject">Subject</label>
                             <input
                                 type="text"
-                                id="contactSubject"
+                                id="subject"
                                 name="subject"
                                 placeholder="What is this about?"
                                 required
@@ -1012,28 +1013,21 @@
                         </div>
 
                         <div class="contact-form-group">
-                            <label for="contactMessage">Your Message</label>
+                            <label for="message">Your Message</label>
                             <textarea
-                                id="contactMessage"
+                                id="message"
                                 name="message"
-                                rows="6"
                                 placeholder="Write your message here..."
+                                rows="6"
                                 required
                             ></textarea>
                         </div>
 
                         <button type="submit" class="contact-submit">
-                            <span>Send Message</span>
-                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message <i class="fas fa-paper-plane"></i>
                         </button>
-
-                        <p
-                            class="contact-form-status"
-                            id="contactFormStatus"
-                            aria-live="polite"
-                        ></p>
-
                     </form>
+
 
                 </div>
 
