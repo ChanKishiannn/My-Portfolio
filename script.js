@@ -94,43 +94,65 @@ document.querySelectorAll(".projectCard").forEach((card) => {
 });
 
 
+
 /* =========================
-   Contact Form
+   Contact Form - Formspree
    ========================= */
 
 const contactForm = document.querySelector("#contactForm");
-const contactFormStatus = document.querySelector("#contactFormStatus");
 
-if (contactForm && contactFormStatus) {
-    contactForm.addEventListener("submit", (event) => {
+if (contactForm) {
+    const submitButton = contactForm.querySelector(
+        'button[type="submit"]'
+    );
+
+    contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
-        const name = document.querySelector("#contactName")?.value.trim();
-        const email = document.querySelector("#contactEmail")?.value.trim();
-        const subject = document.querySelector("#contactSubject")?.value.trim();
-        const message = document.querySelector("#contactMessage")?.value.trim();
+        if (!contactForm.reportValidity()) return;
 
-        if (!name || !email || !subject || !message) {
-            contactFormStatus.textContent =
-                "Please fill in all fields.";
-            return;
+        const originalButtonText = submitButton.innerHTML;
+
+        submitButton.disabled = true;
+        submitButton.innerHTML = "Sending...";
+
+        let status = document.querySelector("#contactFormStatus");
+
+        if (!status) {
+            status = document.createElement("p");
+            status.id = "contactFormStatus";
+            status.className = "contact-form-status";
+            status.setAttribute("role", "status");
+            status.setAttribute("aria-live", "polite");
+            contactForm.appendChild(status);
         }
 
-        const recipient = "chankishiannn@gmail.com";
-        const emailSubject = encodeURIComponent(subject);
+        status.textContent = "";
 
-        const emailBody = encodeURIComponent(
-            `Name: ${name}\n` +
-            `Email: ${email}\n\n` +
-            `Message:\n${message}`
-        );
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                    Accept: "application/json"
+                }
+            });
 
-        const mailtoLink =
-            `mailto:${recipient}?subject=${emailSubject}&body=${emailBody}`;
+            if (!response.ok) {
+                throw new Error("Message submission failed.");
+            }
 
-        contactFormStatus.textContent =
-            "Opening your email application. Please send the prepared email to complete delivery.";
+            status.textContent =
+                "Your message was sent successfully! Thank you for contacting me.";
 
-        window.location.href = mailtoLink;
+            contactForm.reset();
+        } catch (error) {
+            status.textContent =
+                "Sorry, your message could not be sent. Please try again or email me directly at chankishiannn@gmail.com.";
+        } finally {
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalButtonText;
+        }
     });
 }
+
