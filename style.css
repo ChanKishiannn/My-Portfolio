@@ -2367,3 +2367,32 @@
     }
 }
 
+
+/* =========================
+   Mobile Horizontal Overflow Fix
+   ========================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img,
+video {
+    height: auto;
+}
+
