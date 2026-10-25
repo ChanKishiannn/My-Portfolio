@@ -1711,6 +1711,54 @@
         }
     }
 
+/* =============================
+   View More Projects Button
+   ============================= */
+
+.projectsMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.projectsMoreButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 14px 28px;
+
+    background: #111827;
+    color: #ffffff;
+
+    border: 1px solid #111827;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.projectsMoreButton:hover {
+    background: #374151;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(17, 24, 39, 0.15);
+}
+
+.projectsMoreButton i {
+    transition: transform 0.3s ease;
+}
+
+.projectsMoreButton:hover i {
+    transform: translateX(5px);
+}
+
+
 
     /* =============================
     Experience Section
