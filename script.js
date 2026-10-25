@@ -39,7 +39,7 @@ if (navbarToggle && navbarMenu) {
    ========================= */
 
 const sections = document.querySelectorAll(
-    "#homepageID, #aboutMeID, #servicesID, #toolsID, #projectsID, #experienceID, #contactID"
+    "#homepageID, #aboutMeID, #servicesID, #toolsID, #projectsID, #experienceID, #certificates, #contactID"
 );
 
 function updateActiveNavbar() {
