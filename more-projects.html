@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome for the arrow icon -->
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,7 +19,7 @@
 <body>
 
     <!-- =========================
-         More Projects
+         More Projects Section
          ========================= -->
 
     <section class="projectsSection moreProjectsSection" id="moreProjectsID">
@@ -32,12 +33,87 @@
             practicing my programming skills, and building applications.
         </p>
 
+        <!-- =========================
+             Project Category Filters
+             ========================= -->
+
+        <div
+            class="projectFilters"
+            role="group"
+            aria-label="Filter projects by category"
+        >
+            <button
+                type="button"
+                class="projectFilter active"
+                data-filter="all"
+                aria-pressed="true"
+            >
+                All Projects
+            </button>
+
+            <button
+                type="button"
+                class="projectFilter"
+                data-filter="java"
+                aria-pressed="false"
+            >
+                Java
+            </button>
+
+            <button
+                type="button"
+                class="projectFilter"
+                data-filter="canva"
+                aria-pressed="false"
+            >
+                Canva
+            </button>
+
+            <button
+                type="button"
+                class="projectFilter"
+                data-filter="automation"
+                aria-pressed="false"
+            >
+                Automation
+            </button>
+
+            <button
+                type="button"
+                class="projectFilter"
+                data-filter="web"
+                aria-pressed="false"
+            >
+                Web Development
+            </button>
+
+            <button
+                type="button"
+                class="projectFilter"
+                data-filter="other"
+                aria-pressed="false"
+            >
+                Other
+            </button>
+        </div>
+
+        <!-- Number of displayed projects -->
+        <p
+            class="projectFilterCount"
+            aria-live="polite"
+        ></p>
+
+        <!-- =========================
+             Projects Grid
+             ========================= -->
+
         <div class="projectsGrid">
 
-            <!-- Project 4: NSTP Certificate of Appreciation -->
-            <article class="projectCard">
+            <!-- Project: NSTP Certificate of Appreciation -->
+            <article class="projectCard" data-category="canva">
 
                 <div class="projectCardTop">
+
                     <img
                         src="Certificate of Appreciation Project.png"
                         alt="NSTP Certificate of Appreciation design"
@@ -50,14 +126,23 @@
                         playsinline
                         preload="metadata"
                     >
-                        <source src="Certificate of Appreciation Project Vid.mp4" type="video/mp4">
+                        <source
+                            src="Certificate of Appreciation Project Vid.mp4"
+                            type="video/mp4"
+                        >
                     </video>
+
                 </div>
 
                 <div class="projectContent">
-                    <span class="projectCategory">Graphic Design</span>
 
-                    <h3 class="projectTitle">NSTP Certificate of Appreciation</h3>
+                    <span class="projectCategory">
+                        Graphic Design
+                    </span>
+
+                    <h3 class="projectTitle">
+                        NSTP Certificate of Appreciation
+                    </h3>
 
                     <p class="projectDescription">
                         Designed a Certificate of Appreciation for first-year
@@ -71,10 +156,14 @@
                         <span>Graphic Design</span>
                         <span>Certificate Design</span>
                     </div>
+
                 </div>
 
                 <div class="projectCardBottom">
-                    <span class="projectType">Design Project</span>
+
+                    <span class="projectType">
+                        School Club Project
+                    </span>
 
                     <a
                         href="https://canva.link/uezebgbe8e6aqio"
@@ -84,17 +173,20 @@
                     >
                         View Project <span>↗</span>
                     </a>
+
                 </div>
 
             </article>
 
-            <!-- Project 5 -->
-            <article class="projectCard">
+
+            <!-- Project: Fashion Branding -->
+            <article class="projectCard" data-category="canva">
 
                 <div class="projectCardTop">
+
                     <img
-                        src="Project4.png"
-                        alt="Project 4 preview"
+                        src="FashionBrandingPic.png"
+                        alt="Fashion model graphic design preview"
                         class="projectPreview"
                     >
 
@@ -104,56 +196,200 @@
                         playsinline
                         preload="metadata"
                     >
-                        <source src="Project4Vid.mp4" type="video/mp4">
+                        <source
+                            src="FashionBrandingVid.mp4"
+                            type="video/mp4"
+                        >
                     </video>
+
                 </div>
 
                 <div class="projectContent">
-                    <span class="projectCategory">Web Development</span>
 
-                    <h3 class="projectTitle">Your Project Name</h3>
+                    <span class="projectCategory">
+                        Graphic Design
+                    </span>
+
+                    <h3 class="projectTitle">
+                        Fashion Model Graphic Designing
+                    </h3>
 
                     <p class="projectDescription">
-                        Write your project description here.
-                        Explain the main features and the technologies
-                        you used to build this project.
+                        This is a personal project I created to practice and
+                        improve my graphic design skills. Through this project,
+                        I aim to explore different design styles, experiment with
+                        colors and typography, and develop my creativity. It also
+                        allows me to apply what I have learned while improving
+                        my skills and gaining more experience in graphic design.
                     </p>
 
                     <div class="projectTags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span>Canva</span>
+                        <span>Graphic Design</span>
                     </div>
+
                 </div>
 
                 <div class="projectCardBottom">
-                    <span class="projectType">Personal Project</span>
+
+                    <span class="projectType">
+                        Small Personal Project
+                    </span>
 
                     <a
-                        href="YOUR_GITHUB_PROJECT_LINK"
+                        href="https://canva.link/4g4h7a8ex7jqb8e"
                         class="projectLink"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         View Project <span>↗</span>
                     </a>
+
                 </div>
 
             </article>
 
-            <!-- Add more projectCard articles here -->
+            <!--
+                ADD MORE PROJECTS BELOW.
+
+                Java:
+                <article class="projectCard" data-category="java">
+
+                Automation:
+                <article class="projectCard" data-category="automation">
+
+                Web Development:
+                <article class="projectCard" data-category="web">
+
+                Other:
+                <article class="projectCard" data-category="other">
+
+                Remember to close each article with:
+                </article>
+            -->
 
         </div>
 
-        <!-- Back to Main Projects -->
+        <!-- =========================
+             Back to Main Projects
+             ========================= -->
+
         <div class="projectsMore">
-            <a href="index.html#projectsID" class="projectsMoreButton">
+
+            <a
+                href="index.html#projectsID"
+                class="projectsMoreButton"
+            >
                 <i class="fa-solid fa-arrow-left"></i>
                 Back to My Projects
             </a>
+
         </div>
 
     </section>
+
+
+    <!-- =========================
+         Project Filtering Script
+         ========================= -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const filterButtons = document.querySelectorAll(
+                ".projectFilter"
+            );
+
+            const projectCards = document.querySelectorAll(
+                ".projectsGrid .projectCard"
+            );
+
+            const projectCount = document.querySelector(
+                ".projectFilterCount"
+            );
+
+            if (!filterButtons.length || !projectCards.length) {
+                return;
+            }
+
+            function filterProjects(category) {
+
+                let visibleCount = 0;
+
+                projectCards.forEach((card) => {
+
+                    const projectCategory =
+                        card.dataset.category || "other";
+
+                    const shouldShow =
+                        category === "all" ||
+                        projectCategory === category;
+
+                    card.classList.toggle(
+                        "filter-hidden",
+                        !shouldShow
+                    );
+
+                    if (shouldShow) {
+                        visibleCount++;
+                    }
+
+                    // Stop videos when their cards are hidden.
+                    if (!shouldShow) {
+                        const video = card.querySelector(
+                            ".projectPreviewVideo"
+                        );
+
+                        if (video) {
+                            video.pause();
+                            video.currentTime = 0;
+                        }
+                    }
+
+                });
+
+                // Update project count.
+                if (projectCount) {
+                    projectCount.textContent =
+                        `Showing ${visibleCount} of ${projectCards.length} projects`;
+                }
+
+                // Update active filter button.
+                filterButtons.forEach((button) => {
+
+                    const isActive =
+                        button.dataset.filter === category;
+
+                    button.classList.toggle(
+                        "active",
+                        isActive
+                    );
+
+                    button.setAttribute(
+                        "aria-pressed",
+                        String(isActive)
+                    );
+
+                });
+
+            }
+
+            // Listen for filter button clicks.
+            filterButtons.forEach((button) => {
+
+                button.addEventListener("click", () => {
+
+                    filterProjects(button.dataset.filter);
+
+                });
+
+            });
+
+            // Show all projects initially.
+            filterProjects("all");
+
+        });
+    </script>
 
 </body>
 </html>
