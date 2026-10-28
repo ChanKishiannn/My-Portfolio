@@ -94,6 +94,59 @@ document.querySelectorAll(".projectCard").forEach((card) => {
 });
 
 
+/* =============================
+   Project Category Filter
+   ============================= */
+
+const projectFilters = document.querySelectorAll(".projectFilter");
+const projectCards = document.querySelectorAll(".projectsGrid .projectCard");
+const projectFilterCount = document.querySelector(".projectFilterCount");
+
+if (projectFilters.length && projectCards.length) {
+    function filterProjects(category) {
+        let visibleCount = 0;
+
+        projectCards.forEach((card) => {
+            const projectCategory = card.dataset.category || "other";
+
+            const shouldShow =
+                category === "all" || projectCategory === category;
+
+            card.classList.toggle("filter-hidden", !shouldShow);
+
+            if (shouldShow) {
+                visibleCount++;
+            }
+        });
+
+        // Update the number of displayed projects.
+        if (projectFilterCount) {
+            projectFilterCount.textContent =
+                `Showing ${visibleCount} of ${projectCards.length} projects`;
+        }
+
+        // Update the selected filter button.
+        projectFilters.forEach((button) => {
+            const isActive = button.dataset.filter === category;
+
+            button.classList.toggle("active", isActive);
+            button.setAttribute("aria-pressed", String(isActive));
+        });
+    }
+
+    projectFilters.forEach((button) => {
+        button.addEventListener("click", () => {
+            filterProjects(button.dataset.filter);
+        });
+    });
+
+    // Display all projects by default.
+    filterProjects("all");
+}
+
+
+
+
 
 /* =========================
    Contact Form - Formspree
